@@ -1,0 +1,35 @@
+교수님..
+
+cocos2d ide 가 제대로 실행이 되질 않습니다.
+javascript 프레임 워크는 설정이 되는데
+python설정이 안됩니다. python 설정을 하려고 하면
+The currently displayed page contains invalid values가 뜨게 됩니다.
+Window-preference에 가서 cocos에 직접 설정하려고 해도 그 창이 뜨면서 python부분에 공백의 조그마한 사각형의 
+경계가 표시되어있고 파이선 설정 자체를 못하고 있습니다. 
+우선 add및 push를 시험 할겸 오류 보고로 이 파일을 넣었습니다.
+
+(아마도 관련이 있는 error log 같은데 확실히 모르겠습니다
+014-10-17 00:52:00 [ERROR]-[Worker-1:CommandHelper:63] runCommand Exception
+java.io.IOException: Cannot run program "where": CreateProcess error=2, 지정된 파일을 찾을 수 없습니다
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at java.lang.Runtime.exec(Runtime.java:620)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at org.ccdt.common.utils.CommandHelper.runCommand(CommandHelper.java:95)
+	at org.ccdt.common.utils.CommandHelper.executeSynchronous(CommandHelper.java:64)
+	at org.ccdt.common.CommonPython.readPythonPathFromPath(CommonPython.java:129)
+	at org.ccdt.common.CommonPython.loadSystemPython(CommonPython.java:109)
+	at org.ccdt.common.ui.preferences.Startup.loadPython(Startup.java:76)
+	at org.ccdt.common.ui.preferences.Startup.earlyStartup(Startup.java:22)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2555)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.IOException: CreateProcess error=2, 지정된 파일을 찾을 수 없습니다
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 13 more
+
+)
